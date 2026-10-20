@@ -39,7 +39,7 @@ public class Valvula {
         this.activa = true;
     }
     public void desactivar(){
-        this.desactivar = false;
+        this.activa = false;
     }
 
 }
