@@ -14,7 +14,9 @@ public class Valvula {
         }
     }
     public void setPresion(double presion){
-        this.presion = presion;
+        if(presion >= 0){
+            this.presion = presion;
+        }
     }
     public void  setActiva(boolean activa){
         this.activa = activa;
@@ -33,5 +35,11 @@ public class Valvula {
         return activa;
     }
 
+    public void activar(){
+        this.activa = true;
+    }
+    public void desactivar(){
+        this.desactivar = false;
+    }
 
 }
